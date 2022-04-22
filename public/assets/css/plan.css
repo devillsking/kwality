@@ -1,0 +1,17 @@
+.banner_container {
+    width: 100%;
+    height: 500px;
+    margin-top: 85px;
+}
+
+.banner_container img {
+    width: 100%;
+    height: 100%;
+}
+.filter_container_input{
+ background-color: #444444;   
+ margin:20px 0px;
+ padding:20px;
+ color: #fff;
+}
+

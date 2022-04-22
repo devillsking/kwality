@@ -1,0 +1,305 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Common */
+h1, h2, h3, h4, h5, h6, p, a {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.primaryColor {
+    color: #d35313;
+}
+
+.secondaryColor {
+    color: #444444;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.center {
+    text-align: center;
+}
+
+/* Common */
+
+
+/* Navbar */
+.navbar_container {
+    width: 100%;
+    padding: 10px 100px;
+    position: fixed;
+    top: 0;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1001;
+    background-color: #fff;
+}
+
+.left_nabvar {
+    width: 50%;
+}
+
+.logo {
+    max-width: 95px;
+    z-index: 999;
+}
+
+.right_nabvar {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.right_nabvar a {
+    margin: 0 15px;
+    font-size: 20px;
+    font-weight: 200;
+    text-decoration: none;
+}
+
+.right_nabvar a:hover {
+    color: #d35313 !important;
+}
+
+/* Navbar */
+
+/* Carousel */
+.carousel_container {
+    width: 100%;
+    margin-top: 85px;
+}
+
+.custom_height_carousel {
+    height: 500px;
+}
+
+/* Carousel */
+
+/* about Us */
+.about_container {
+    padding: 10px;
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left_about {
+    width: 50%;
+    padding: 50px;
+}
+
+.about_image {
+    width: 100%;
+    height: 100%;
+}
+
+.right_about {
+    width: 50%;
+    padding: 50px;
+}
+
+/* about Us */
+
+/* contact */
+
+.contact_container {
+    padding: 10px;
+    padding-top: 100px;
+    margin: 10px 0px;
+}
+
+.contact_flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.form_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* contact us form input */
+
+.form__group {
+    position: relative;
+    padding: 15px 0 0;
+    margin-top: 10px;
+}
+
+.form__field {
+    border: 0;
+    border-bottom: 2px solid #444444;
+    outline: 0;
+    font-size: 18px;
+    color: #000;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+}
+
+.form__field::placeholder {
+    color: transparent;
+}
+
+.form__field:placeholder-shown~.form__label {
+    font-size: 18px;
+    cursor: text;
+    top: 20px;
+}
+
+.form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #444444;
+}
+
+.form__field:focus {
+    padding-bottom: 6px;
+    border-image: linear-gradient(to right, #d35313, #d35313);
+    border-image-slice: 1;
+}
+
+.form__field:focus~.form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #d35313;
+    font-weight: 700;
+}
+
+/* contact us form input */
+
+/* Submit Button */
+.form_submit_button {
+    background: #444444;
+    color: #fff;
+    border: 1px solid #eee;
+    box-shadow: 5px 5px 5px #eee;
+    text-shadow: none;
+    padding: 10px 0px;
+    margin-top: 15px;
+}
+
+.form_submit_button:hover {
+    background: #d35313;
+    color: #fff;
+    border: 1px solid #eee;
+    box-shadow: 5px 5px 5px #eee;
+    text-shadow: none;
+}
+
+/* Submit Button */
+
+.contact_address {
+    margin-top: 20px;
+}
+
+/* contact */
+
+
+/* Media Quary */
+@media screen and (max-width: 600px) {
+
+    /* Navbar */
+    .navbar_container {
+        padding: 10px 20px;
+    }
+
+    .logo {
+        width: 40%;
+    }
+
+    .right_nabvar a {
+        margin: 0 10px;
+        font-size: 20px;
+    }
+
+    .right_nabvar a:hover {
+        color: #d35313;
+        cursor: pointer;
+    }
+
+    /* Navbar */
+
+    /* Carousel */
+    .carousel_container {
+        width: 100%;
+        margin-top: 65px;
+    }
+
+    .custom_height_carousel {
+        height: 100%;
+    }
+
+    /* Carousel */
+
+    /* about Us */
+    .about_container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column-reverse;
+        padding-top: 20px;
+    }
+
+    .left_about {
+        width: 100%;
+    }
+
+    .about_image {
+        width: 100%;
+        height: 100%;
+    }
+
+    .right_about {
+        width: 100%;
+        padding: 25px;
+    }
+
+    /* about Us */
+
+
+    /* contact */
+
+    .contact_flex {
+        flex-direction: column;
+    }
+
+    .right_contact {
+        margin-top: 15px;
+    }
+
+    .contact_address {
+        margin-top: 50px;
+    }
+
+    /* contact */
+
+}
+
+/* Media Quary */
+
+.box {
+    padding: 0 5px 0 5px;
+}
+
+.box .inner {
+    background-color: red;
+}
